@@ -1,0 +1,25 @@
+<form [formGroup]="RegisterForm" (ngSubmit)="Register(RegisterForm.value)">
+    <div>
+      <mat-form-field appearance="legacy">
+        <mat-label>Usuario</mat-label>
+        <input formControlName="User" matInput placeholder="">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input formControlName="Clave" matInput placeholder="">
+      </mat-form-field>
+    
+    </div>
+  <div>
+    <mat-form-field appearance="standard">
+      <mat-label>Correo electrónico</mat-label>
+      <input formControlName="Email" matInput placeholder="">
+    </mat-form-field>
+  
+  </div>
+  <div>
+    <button [disabled]="RegisterForm.invalid" type="submit">Registrarse</button>
+  </div>
+  </form>
