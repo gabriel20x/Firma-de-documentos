@@ -1,0 +1,35 @@
+.footer {
+    text-align: center;
+}
+.footer__about {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0cbccc;
+}
+
+.footer__about a{
+    padding: 0;
+}
+
+.footer__about li {
+    list-style: none;
+}
+
+.footer__about ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer__about::after{
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    transform-origin: top left;
+    background-color: #BBDEFB;
+    height: 1.2px;
+    width: 95%;
+    content: '';
+    box-shadow: 1.5px 1.5px #0D47A1;
+}

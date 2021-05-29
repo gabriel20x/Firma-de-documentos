@@ -1,0 +1,17 @@
+<div mat-dialog-content>
+    <div *ngIf="SelectorBox=='SingUpBox'">
+        <div>
+            <app-register-box></app-register-box>
+        <button mat-button (click)="SelectorBox='LoginBox'" >Ya tengo una cuenta</button>
+        <button mat-dialog-close mat-button>Exit</button>
+        </div>
+    </div>
+    <div *ngIf="SelectorBox=='LoginBox'">
+        <div>
+            <app-login-box></app-login-box>
+        <button mat-button (click)="SelectorBox='SingUpBox'" >Registrarse</button>
+        <button mat-dialog-close mat-button>Exit</button>
+        </div>
+    </div>
+</div>
+
